@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/:name", (req, res) => {
-  const keys = fs.readJSONSync("./DO_NOT_PUSH_TO_GITHUB.json");
+  const keys = fs.readJSONSync("./api_keys.json");
   const api_key = keys[req.params.name];
   const URL = req.body.URL.replace("api_key", api_key);
 
