@@ -1,0 +1,8 @@
+# dependencies
+node_modules/
+
+# testing
+test.rest
+
+# DO NOT PUSH
+DO_NOT_PUSH_TO_GITHUB.json
